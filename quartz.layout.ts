@@ -17,6 +17,9 @@ export const sharedPageComponents: SharedLayout = {
         category: 'Announcements',
         // from data-category-id
         categoryId: 'DIC_kwDONWDs084CksmM',
+        themeUrl: "https://thereisamaninthe.github.io/blog/static/giscus",
+        lightTheme: "light-theme",
+        darkTheme: "dark-theme",
       }
     }),
   ],
