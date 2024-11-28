@@ -16,15 +16,15 @@ const observer = new IntersectionObserver((entries) => {
 })
 
 function toggleExplorer(this: HTMLElement) {
-  this.classList.toggle("collapsed")
+  this.classList.remove("collapsed")
   this.setAttribute(
     "aria-expanded",
-    this.getAttribute("aria-expanded") === "true" ? "false" : "true",
+    "true",
   )
   const content = this.nextElementSibling as MaybeHTMLElement
   if (!content) return
 
-  content.classList.toggle("collapsed")
+  content.classList.remove("collapsed")
 }
 
 function toggleFolder(evt: MouseEvent) {

@@ -1,6 +1,14 @@
 ---
-title: Welcome to Quartz
+title: Welcome!
+description:
+permalink: 
+aliases:
+tags:
+draft: false
+date:
+comments:
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Thank you for taking your time to read my `return`s.
+
+![[images/sandcastle.png]]
