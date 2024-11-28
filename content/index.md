@@ -1,5 +1,6 @@
 ---
 title: Welcome!
+socialImage: "sandcastle.png"
 description:
 permalink: 
 aliases:
