@@ -24,6 +24,20 @@ function boolToStringBool(b: boolean): string {
   return b ? "1" : "0"
 }
 
+const changeGiscusTheme = (theme: string) => {
+  const iframe = document.querySelector<HTMLIFrameElement>('iframe.giscus-frame');
+  iframe?.contentWindow?.postMessage(
+    {
+      giscus: {
+        setConfig: {
+          theme: theme,
+        },
+      },
+    },
+    'https://giscus.app',
+  );
+};
+
 export default ((opts: Options) => {
   const Comments: QuartzComponent = ({ displayClass, fileData, cfg }: QuartzComponentProps) => {
     // check if comments should be displayed according to frontmatter
